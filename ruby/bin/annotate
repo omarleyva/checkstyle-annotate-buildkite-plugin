@@ -15,9 +15,9 @@ end
 checkstyle_report_files = Dir.glob(File.join(checkstyle_dir, '**', '*'))
 errors = []
 
-puts "BLAHHH"
+STDERR.puts "BLAHHH"
 
-puts checkstyle_report_files
+STDERR.puts checkstyle_report_files
 
 checkstyle_report_files.sort.each do |file|
   next if File.directory?(file)
@@ -25,12 +25,12 @@ checkstyle_report_files.sort.each do |file|
   STDERR.puts "Parsing #{file.sub(checkstyle_dir, '')}"
   xml = File.read(file)
   doc = REXML::Document.new(xml)
-  puts xml
-  puts doc
+  STDERR.puts xml
+  STDERR.puts doc
 
   REXML::XPath.each(doc, '//checkstyle//file') do |f|
     name = f.attributes['name'].to_s
-    puts f.elements
+    STDERR.puts f.elements
     f.elements.each('error') do |e|
       errors << Error.new(
         name,
