@@ -23,7 +23,7 @@ buildkite-agent artifact download \
 
 echo "--- :checkstyle: Processing the zzz files"
 
-ls -la $PLUGIN_DIR/ruby
+ls -la $PLUGIN_DIR/ruby/bin/annotate
 
 ls -la $artifacts_dir
 
@@ -33,8 +33,7 @@ docker \
     --rm \
     --volume "$artifacts_dir:/checkstyles" \
     --volume "$PLUGIN_DIR/ruby:/src" \
-    public.ecr.aws/docker/library/ruby:2.5-alpine /src/bin/annotate /checkstyles \
-      > "$annotation_path"
+    public.ecr.aws/docker/library/ruby:2.5-alpine ls -la /src
 
 cat "$annotation_path"
 
