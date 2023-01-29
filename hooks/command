@@ -21,7 +21,7 @@ buildkite-agent artifact download \
   "${BUILDKITE_PLUGIN_CHECKSTYLE_ANNOTATE_ARTIFACTS}" \
   "$artifacts_dir"
 
-echo "--- :checkstyle: Processing the Checkstyle files"
+echo "--- :checkstyle: Processing the zzz files"
 
 docker \
   --log-level "error" \
