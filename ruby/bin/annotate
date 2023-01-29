@@ -18,9 +18,9 @@ errors = []
 STDERR.puts '--- ✍️ Parsing xml file'
 
 STDERR.puts "BLAHHH"
-STDERR.puts checkstyle_dir
+STDERR.puts "hi" + checkstyle_dir
 
-STDERR.puts checkstyle_report_files
+STDERR.puts "zzz:" + checkstyle_report_files
 
 checkstyle_report_files.sort.each do |file|
   next if File.directory?(file)
