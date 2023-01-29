@@ -15,6 +15,10 @@ end
 checkstyle_report_files = Dir.glob(File.join(checkstyle_dir, '**', '*'))
 errors = []
 
+puts "BLAHHH"
+
+puts checkstyle_report_files
+
 checkstyle_report_files.sort.each do |file|
   next if File.directory?(file)
 
