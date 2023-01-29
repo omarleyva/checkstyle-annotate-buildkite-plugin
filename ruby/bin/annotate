@@ -7,7 +7,7 @@ require 'rexml/document'
 
 checkstyle_dir = ARGV[0]
 abort('Usage: annotate <checkstyle-dir>') unless checkstyle_dir
-abort("#{checkstyle_dir} does not exist") unless Dir.exist?(checkstyle_dir)
+abort("#{checkstyle_dir} does   not exist") unless Dir.exist?(checkstyle_dir)
 
 class Error < Struct.new(:name, :line, :message, :severity, :source, :type)
 end
