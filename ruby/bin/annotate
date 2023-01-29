@@ -24,6 +24,7 @@ checkstyle_report_files.sort.each do |file|
 
   REXML::XPath.each(doc, '//checkstyle//file') do |f|
     name = f.attributes['name'].to_s
+    puts f.elements
     f.elements.each('error') do |e|
       errors << Error.new(
         name,
