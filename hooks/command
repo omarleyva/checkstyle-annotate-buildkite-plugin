@@ -23,7 +23,7 @@ buildkite-agent artifact download \
 
 echo "--- :checkstyle: Processing the Checkstyle files"
 
-sudo docker \
+docker \
   --log-level "error" \
   run \
     --rm \
