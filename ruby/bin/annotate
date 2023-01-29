@@ -44,7 +44,7 @@ checkstyle_report_files.sort.each do |file|
   end
 end
 
-STDERR.puts '--- ❓ Checking errors'
+STDERR.puts '--- ❓ Checking zzzzz'
 
 if errors.empty?
   STDERR.puts 'There were no errors 🙌'
