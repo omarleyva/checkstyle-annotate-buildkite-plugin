@@ -21,7 +21,7 @@ buildkite-agent artifact download \
   "${BUILDKITE_PLUGIN_CHECKSTYLE_ANNOTATE_ARTIFACTS}" \
   "$artifacts_dir"
 
-echo "--- :checkstyle: Processing the AKLDJSKL files"
+echo "--- :checkstyle: Processing the files"
 
 docker \
   --log-level "error" \

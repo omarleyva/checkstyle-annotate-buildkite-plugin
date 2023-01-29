@@ -18,6 +18,7 @@ errors = []
 STDERR.puts '--- ✍️ Parsing xml file'
 
 STDERR.puts "BLAHHH"
+STDERR.puts checkstyle_dir
 
 STDERR.puts checkstyle_report_files
 
