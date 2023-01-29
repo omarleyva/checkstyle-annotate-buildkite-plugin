@@ -49,7 +49,7 @@ end
 STDERR.puts '--- ❓ Checking zzzzz'
 
 if errors.empty?
-  STDERR.puts 'There were no blahhhh 🙌'
+  STDERR.puts 'There were no poooo 🙌'
   exit 0
 else
   STDERR.puts "There #{errors.length == 1 ? 'is 1 error' : "are #{errors.length} errors"} 😭"
