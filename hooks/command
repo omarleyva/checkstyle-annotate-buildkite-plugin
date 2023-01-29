@@ -4,7 +4,7 @@ set -euo pipefail
 
 PLUGIN_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)/.."
 
-echo "--- :bowtie: Download the Checkstyle files"
+echo "--- :bowtie: Download the Lint files"
 
 artifacts_dir="$(pwd)/$(mktemp -d "checkstyle-annotate-plugin-artifacts-tmp.XXXXXXXXXX")"
 annotation_dir="$(pwd)/$(mktemp -d "checkstyle-annotate-plugin-annotation-tmp.XXXXXXXXXX")"
