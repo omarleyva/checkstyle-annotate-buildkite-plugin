@@ -21,6 +21,8 @@ checkstyle_report_files.sort.each do |file|
   STDERR.puts "Parsing #{file.sub(checkstyle_dir, '')}"
   xml = File.read(file)
   doc = REXML::Document.new(xml)
+  puts xml
+  puts doc
 
   REXML::XPath.each(doc, '//checkstyle//file') do |f|
     name = f.attributes['name'].to_s
