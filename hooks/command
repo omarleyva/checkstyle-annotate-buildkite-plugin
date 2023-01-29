@@ -23,6 +23,10 @@ buildkite-agent artifact download \
 
 echo "--- :checkstyle: Processing the zzz files"
 
+ls -la $PLUGIN_DIR/ruby
+
+ls -la $artifacts_dir
+
 docker \
   --log-level "error" \
   run \
